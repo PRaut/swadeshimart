@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans+Caption&family=Roboto:wght@400;500;700&display=swap');
+
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,
+var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {margin: 0;padding: 0;border: 0;outline: 0;}
+header,footer,article,section,hgroup,nav,figure {	display: block;	margin: 0px;	padding: 0px;}
+img{border: 0 none;	height: auto;	max-width: 100%;	vertical-align: middle;	transition: all 0.5s ease-in-out 0s;}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: normal;
+	font-weight: 400;
+	color: #333333;
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul li {
+	list-style: none;
+}
+
+p{font-size: 16px; line-height: 24px;}
+
+.main{width: 100%; float: left; background: url('../images/main-banner.jpg') center; display: flex; justify-content: center; align-items: center; padding: 10px; background-size: cover; height:100vh; position: relative;}
+.main:after{left:0; top: 0; right:0; bottom:0; content: ""; position: absolute; background:#fff; /* For browsers that do not support gradients */
+	 opacity: 0.8;}
+.logo{position: absolute; z-index: 2; width:280px; float: left; clear: both; top: 10px;}
+.main p{color:#009633; text-align: center; position: relative; z-index: 2; position: absolute; width:100%; bottom: 20px;}
+.com_text h1{color:#e52300; text-align:center; position:relative; z-index: 2; clear: both; font-size: 30px; letter-spacing: 1px; animation:blinkingText 1.2s infinite; line-height: 34px;}
+	  
+@keyframes blinkingText{
+    0%{color: #e52300;}
+    49%{color: #e52300;}
+    60%{color:#009633;}
+    99%{color:#009633;}
+    100%{color: #e52300;}
+}
+
+@media only screen and (max-width:767px){
+	.logo{width:220px;}
+	.main p{bottom:10px;}
+}

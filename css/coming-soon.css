@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans+Caption&family=Roboto:wght@400;500;700&display=swap');
+
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,
+var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {margin: 0;padding: 0;border: 0;outline: 0;}
+header,footer,article,section,hgroup,nav,figure {	display: block;	margin: 0px;	padding: 0px;}
+img{border: 0 none;	height: auto;	max-width: 100%;	vertical-align: middle;	transition: all 0.5s ease-in-out 0s;}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: normal;
+	font-weight: 400;
+	color: #333333;
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul li {
+	list-style: none;
+}
+
+p{font-size: 16px; line-height: 24px;}
+
+header{text-align: center; padding:0 0 20px; width:100%; float: left; width:100%; float: left; border: 0px; border-bottom: 4px solid;
+  border-image: linear-gradient(to right, #eb1e03 45%, #049530 55%); border-image-slice: 1; border-image-width:4px 0 0 0;} 
+header .logo{width:300px; display: inline-block; margin-top:20px;}
+
+.comming{width:100%; float: left; text-align: center; padding: 60px 0 200px;}
+.comming h1{text-transform: uppercase; font-size: 40px; color:#eb1e03;}
+.comming h1 span{color:#049530}	
+
+footer{background: #049530; width:100%; float: left; padding: 15px 5px 10px 5px; text-align: center; color:#fff;}
+
+
+@media only screen and (max-width:767px){
+	.comming h1{font-size:30px;}
+	.comming{padding:30px 0 170px;}
+	header .logo{width:230px;}
+}
+
+@keyframes slidy {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+	}
+	
+	body { margin: 0; } 
+	div#slider { overflow: hidden; height:100vh;}
+	div#slider figure img { width: 20%; float: left; height:100%;}
+	div#slider figure { 
+	  position: relative;
+	  width: 500%;
+	  margin: 0;
+	  left: 0;
+	  height:100%;
+	  text-align: left;
+	  font-size: 0;
+	  animation: 15s slidy infinite; 
+	}
+	
